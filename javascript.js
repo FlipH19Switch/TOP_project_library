@@ -6,11 +6,13 @@ const form = document.querySelector('.new-book-form');
 const addBook = document.querySelector('.add-book');
 
 // construct book
-function Book(title, author, pages, read) {
-    this.title = title;
-    this.author = author;
-    this.pages = pages;
-    this.read = read;
+class Book {
+    constructor(title, author, pages, read) {
+        this.title = title;
+        this.author = author;
+        this.pages = pages;
+        this.read = read;
+    };
 };
 
 // listen for user to begin adding new book
